@@ -1,0 +1,14 @@
+.booklist{
+    display: flex;
+    justify-content: space-evenly
+}
+.book{
+    background-color: #ddd;
+    padding: 1rem;
+    border:5px solid #00f;
+    text-align: justify
+}
+
+h1{
+    color: #888
+}

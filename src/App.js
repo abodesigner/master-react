@@ -1,28 +1,52 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Welcome from "./components/Welcome";
+import Greet from './components/Greet';
+import Message from './components/Message';
+import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from "./components/ClassClick";
+import EventBinding from "./components/EventBinding";
+import ParentComponent from './components/ParentComponent';
+import CurrentDateOfWeek from './components/CurrentDateOfWeek';
+import BookList from './components/BookList';
+import PersonsList from './components/personsListProject/PersonsList'
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <PersonsList />
+      {/* <BookList /> */}
+      {/* <CurrentDateOfWeek /> */}
+      {/* <ParentComponent />   */}
+      {/* <EventBinding /> */}
+      {/* <FunctionClick />
+      <ClassClick /> */}
+      {/* <Counter /> */}
+      {/* <Message /> */}
+      {/* <Welcome name="bmw">
+         <button>add to cart</button>
+      </Welcome>  
+      <Greet name="noor" age="30">
+        <button>click</button>
+      </Greet> */}
+        {/* <Greet name="anas" age="3.5">
+          <p>this is children prop</p>
+        </Greet>  
+        <Greet name="owis" age="2">
+          <button>action</button>
+        </Greet>  
+        <Greet name="noor" age="30" />
+
+        <Welcome name="anas" age="3.5">
+            <textarea>welcome</textarea>
+        </Welcome>  
+        <Welcome name="mohammed" age="30"/>   */}
       </div>
     );
   }
 }
 
 export default App;
+      
+
