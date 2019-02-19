@@ -11,11 +11,13 @@ import ParentComponent from './components/ParentComponent';
 import CurrentDateOfWeek from './components/CurrentDateOfWeek';
 import BookList from './components/BookList';
 import PersonsList from './components/personsListProject/PersonsList'
+import MobileList from './components/mobilesListProject/MobileList';
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <PersonsList />
+      <MobileList />
+      {/* <PersonsList /> */}
       {/* <BookList /> */}
       {/* <CurrentDateOfWeek /> */}
       {/* <ParentComponent />   */}
