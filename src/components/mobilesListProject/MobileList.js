@@ -10,13 +10,20 @@ class MobileList extends Component {
             mobiles : mobilesData
         };
     }
+
+    handleClick = () => console.log('info from mobileslist');
+
   render() {
-      const example = this.state.mobiles.map(item => item.name);
-      console.log(example);
+      // const example = this.state.mobiles.map(item => item.name);
+      // console.log(example);
     return (
-      <div>
+      <div style={{padding:'1rem'}}>
         <h2>Hello from MobileList - Parent Component</h2>
-        {this.state.mobiles.map(item => (<Mobile key={item.id} data={item} />))}
+        {this.state.mobiles.map(item => (
+        <Mobile key={item.id} data={item} child={this.handleClick} />
+        ))}
+
+        {/* <button onClick={this.handleClick}>click me</button> */}
       </div>
     )
   }
